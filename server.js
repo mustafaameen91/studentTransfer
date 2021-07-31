@@ -17,6 +17,18 @@ connection.connect((error) => {
 });
 
 app.use(cors());
+app.get("/student", (req, res) => {
+   sql.query(
+      "SELECT * FROM student JOIN school ON school.studentid = student.id LIMIT 100",
+      (err, rows) => {
+         if (err) {
+            res.send(err);
+            return;
+         }
+         res.send(rows);
+      }
+   );
+});
 
 app.listen(6600, () => {
    console.log(`server listening to port 6600`);
