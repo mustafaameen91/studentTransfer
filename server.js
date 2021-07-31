@@ -18,7 +18,7 @@ connection.connect((error) => {
 
 app.use(cors());
 app.get("/student", (req, res) => {
-   sql.query(
+   connection.query(
       "SELECT * FROM student JOIN school ON school.studentid = student.id LIMIT 100",
       (err, rows) => {
          if (err) {
