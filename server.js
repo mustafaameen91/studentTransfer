@@ -5,9 +5,9 @@ const cors = require("cors");
 
 const connection = sql.createConnection({
    host: "localhost",
-   user: "russel",
-   password: "superSecretPassword!123",
-   database: "universitydb",
+   user: "devone",
+   password: "uni_Dijla_87601",
+   database: "portal",
    port: "3306",
 });
 
