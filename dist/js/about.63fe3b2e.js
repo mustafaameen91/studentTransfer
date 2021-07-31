@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{"51d2":function(t,e,n){"use strict";n("f1e3")},f1e3:function(t,e,n){},f820:function(t,e,n){"use strict";n.r(e);var s=function(){var t=this,e=t.$createElement;t._self._c;return t._m(0)},c=[function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"about"},[n("div",{staticClass:"title-section"},[n("h2",[t._v("انشاء الوثائق")])])])}],i=(n("51d2"),n("2877")),a={},u=Object(i["a"])(a,s,c,!1,null,"07f754be",null);e["default"]=u.exports}}]);
+//# sourceMappingURL=about.63fe3b2e.js.map
