@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const sql = require("mysql");
 const cors = require("cors");
+const history = require("connect-history-api-fallback");
 
 const connection = sql.createConnection({
    host: "localhost",
@@ -29,6 +30,16 @@ app.get("/student", (req, res) => {
       }
    );
 });
+
+const staticFileMiddleware = express.static(__dirname + "/dist");
+app.use(staticFileMiddleware);
+app.use(
+   history({
+      disableDotRule: true,
+      verbose: true,
+   })
+);
+app.use(staticFileMiddleware);
 
 app.listen(6600, () => {
    console.log(`server listening to port 6600`);
